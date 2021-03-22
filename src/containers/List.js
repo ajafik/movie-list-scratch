@@ -1,8 +1,9 @@
-import React, {Component, component} from 'react';
+import React, {Component} from 'react';
+import Card from '../components/Card';
 
 class List extends Component{
     render(){
-        return <h1>Movie List</h1>;
+        return <Card />;
     }
 };
 
