@@ -7,7 +7,7 @@ const htmlPlugin = new HtmlWebpackPlugin({
 
 module.exports  = {
     module: {
-        rules:[
+        rules:[ 
             {
                 test: /\.js$/,
                 exclude: /node_modules/,
