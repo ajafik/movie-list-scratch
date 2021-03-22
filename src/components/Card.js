@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const Card = ({ movie }) => {
     return <div className="card">
@@ -20,5 +21,18 @@ const Card = ({ movie }) => {
     </div>;
 };
 
+Card.propTypes  = {
+    movie: PropTypes.shape({
+        title: PropTypes.string,
+        distributor: PropTypes.string,
+        year: PropTypes.number,
+        amount: PropTypes.string,
+        ranking: PropTypes.number,
+        img: PropTypes.shape({
+            src: PropTypes.string,
+            alt: PropTypes.string
+        })
+    }).isRequired,
+}
 
 export default Card;
